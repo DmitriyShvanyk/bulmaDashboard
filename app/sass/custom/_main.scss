@@ -1,0 +1,51 @@
+/* ==================== Main ==================== */
+
+.main {
+	padding-left: 460px;
+	padding-top: 150px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+
+	&-content {
+		background: $greyLightCustom;		
+		flex: 1 0 auto;
+	}
+	&-footer {		
+		flex: 0 0 auto;
+		background: $whiteCustom;
+		color: $greyCustom;
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+
+	.main {
+		padding-top: 100px;
+		padding-left: 300px;
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+
+	.main {
+		padding-top: 75px;
+
+		&-footer {
+			font-size: .85rem;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1087px) {
+
+	.main {
+		padding-left: 0;
+	}
+
+}

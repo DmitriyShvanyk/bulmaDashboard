@@ -1,0 +1,105 @@
+/* ==================== Card ==================== */
+
+.card {
+	text-align: center;	
+	border: 2px solid #E5E8EA;
+	padding: 4rem 4.4rem;
+	background: $whiteCustom;
+	box-shadow: none;
+	border-radius: 12px;	
+
+	&-desc {		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	&-caption {
+		color: $blueCustom;
+		font-size: 37px;
+		line-height: 1;
+		margin: 25px 0 0;
+	}
+	&-control {
+		height: 30px;
+		margin: 25px 0 0;
+		display: inline-block;
+
+		svg {
+			max-height: 30px;
+			height: 30px;
+			fill: $blueCustom;			
+			transition: fill .3s ease;
+		}
+
+		&:hover svg {
+			fill: #0173AC;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 2650px) {
+
+	.card {
+		padding: 3rem;
+
+		&-caption {
+			font-size: 32px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 2350px) {
+
+	.card {
+		padding: 2.5rem;
+
+		&-caption {
+			font-size: 26px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1700px) {
+
+	.card {
+		padding: 1.5rem;
+
+		&-caption {
+			font-size: 18px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+
+	@media screen and (max-width: 1700px) {
+
+		.card {
+
+			&-caption {
+				font-size: 16px;
+			}
+			&-control {
+				height: 20px;
+
+				svg {
+					max-height: 20px;
+					height: 20px;
+				}
+			}
+
+		}
+
+	}
+
+}

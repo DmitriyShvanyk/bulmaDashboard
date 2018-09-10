@@ -1,0 +1,63 @@
+/* ==================== Custom btn ==================== */
+
+.button {
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 1.35em .75em;
+	border-width: 2px;
+	border-radius: 8px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $blueCustom;
+	}
+
+}
+.button.is-primary.is-inverted.is-outlined {
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $blueCustom;
+	}
+
+}
+.button.is-info {
+	border: none;
+	background-image: -webkit-linear-gradient( 90deg, rgb(0, 131, 223) 0%, rgb(0, 157, 230) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(0, 131, 223) 0%, rgb(0, 157, 230) 100%);	
+	box-shadow: 0px 4px 6px 0px rgba(0, 144, 226, 0.17);
+}
+
+@media screen and (max-width: 1700px) {
+
+	.button {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+
+	.button {
+		font-size: 16px;
+	}
+
+}
+
+
+.button-container {
+	background: $whiteCustom;
+	padding: 30px 30px 15px 30px;
+}
+
+@media screen and (max-width: 576px) {
+
+	.button-container {
+		padding: 30px 20px 15px 20px;
+	}
+
+}

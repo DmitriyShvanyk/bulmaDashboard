@@ -1,0 +1,334 @@
+/* ==================== Navbar ==================== */
+
+.navbar {
+	background: $whiteCustom;
+	border-bottom: 1px solid #E5E8EA;
+	min-height: 150px;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,.06);
+
+	&-brand {
+		background: $navbarBrandBlue;
+		width: 460px;
+		text-align: center;
+
+		.navbar-item {
+			width: 100%;
+		}
+
+		img {
+			max-height: 100%;
+			display: block;
+			margin: 0 auto;
+			position: relative;
+			top: 3px;
+		}
+	}
+
+	&-menu {		
+	
+		.navbar-item {
+			font-size: 27px;
+			text-transform: uppercase;
+			padding-left: 50px;
+			padding-right: 50px;
+
+			&.is-active {
+				font-weight: 700;
+			}
+		}
+
+	}
+	&-start {
+		/*padding-left: 35px;*/
+		padding-right: 35px;
+	}
+
+	&-end {
+		padding-right: 80px;
+
+		.navbar-account {
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+	}
+
+
+	&-account {
+		border-left: 2px solid #E5E8EA;
+		border-right: 2px solid #E5E8EA;
+	}
+	&-account-caption {
+		text-transform: none;
+		
+		.caret{
+			display: inline-block;
+			vertical-align: middle;
+			width: 15px;
+			height: 15px;
+			border: 2px solid #6D707A;
+			border-top: none;
+			border-left: none;
+			margin: -6px 0 0 12px;
+			transform: rotate(45deg);
+		}
+	}
+
+	&-account-avatar {
+		margin-right: 20px;
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: #ccc url('../img/avatar.png') no-repeat center center;
+		border-radius: 50%;
+		background-size: cover;
+	}
+
+	&-exit {
+		width: 150px;
+		text-align: center;
+		border-right: 2px solid #E5E8EA;
+
+		img {
+			max-height: 2.5rem;
+			display: block;
+			margin: 0 auto;
+		}
+
+	}
+
+	&-burger {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 75px;
+		width: 75px;		
+
+		&.is-active span {
+			background: #FD6347;
+		}	
+
+	}
+
+}
+
+@media screen and (max-width: 2100px) {
+
+	.navbar {
+		&-menu {
+			.navbar-item {
+				font-size: 22px;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+		}
+		&-end {
+			padding-right: 0;
+		}		
+
+	}
+
+}
+
+@media screen and (max-width: 1700px) {
+
+	.navbar {
+
+		min-height: 100px;
+
+		&-brand {
+			width: 300px;
+		}
+
+		&-menu {
+			.navbar-item {
+				font-size: 18px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+		}
+
+		&-end {
+
+			.navbar-account {
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+		}
+
+		&-exit {
+			width: 100px;
+
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+
+	.navbar {
+
+		min-height: 75px;
+
+		&-brand {
+
+			min-height: 75px;
+
+			img {
+				height: auto;
+				top: 0;
+				max-width: 90%;
+				width: 100%;
+			}
+		}
+
+		&-menu {
+			.navbar-item {
+				font-size: 16px;
+			}
+
+		}		
+		
+		&-account-caption {			
+			
+			.caret{				
+				width: 10px;
+				height: 10px;
+				border-width: 1px;
+				margin: -6px 0 0 7px;
+			}
+		}
+
+		&-account-avatar {
+			margin-right: 10px;
+			width: 45px;
+			height: 45px;
+		}
+
+		&-exit {
+			width: 75px;
+			height: 75px;
+			display: flex;
+			align-items: center;			
+		}		
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.navbar {
+
+		&-menu {
+			.navbar-item {
+				font-size: 14px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		&-start {			
+			padding-right: 0;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 1086px) {
+
+	.navbar {
+	
+		&.is-fixed-top-touch,
+		&.is-fixed-top{		
+			
+			.navbar-menu{
+				overflow: visible;
+			}
+		}
+
+		&-menu {			
+			padding: 0;
+			display: block;	
+			position: absolute;
+			top: 0;
+			right: 75px;
+			box-shadow: none;
+		}
+		
+		&-info{
+			display: flex!important;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		&-account{
+			height: 75px;
+			width: 100px;
+			position: relative;	
+			
+			&-avatar{
+				position: relative;
+				top: 6px;
+			}
+		}		
+		
+		&-account-caption{
+			font-size: 0;
+			.caret{				
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				border-width: 2px;
+			}
+		}		
+		.navbar-menu-list{
+			display: none;
+		}
+		
+		&-account-noopen{
+			width: 75px;
+		}
+		
+
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+
+	.navbar {
+
+		&-brand {
+			width: 245px;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.navbar {
+
+		&-brand {
+			width: 145px;
+		}
+
+	}
+
+}
+@media screen and (max-width: 400px) {
+
+	.navbar {
+
+		&-brand {
+			width: 100px;
+		}
+
+	}
+
+}

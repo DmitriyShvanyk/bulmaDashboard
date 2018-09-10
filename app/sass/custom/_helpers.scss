@@ -1,0 +1,16 @@
+/* ==================== Helpers ==================== */
+
+@media screen and (max-width: 1086px) {
+
+	.is-visible-tablet {
+		display: block!important;
+	}
+
+}
+@media screen and (max-width: 767px) {
+
+	.is-visible-mobile {
+		display: block!important;
+	}
+
+}
